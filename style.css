@@ -70,3 +70,11 @@ section h2 {
 .cuatri3 { background-color: #f4f0ff; }
 .cuatri4 { background-color: #fff0f0; }
 .cuatri5 { background-color: #f9f9f0; }
+.nota {
+  margin-left: 10px;
+  padding: 4px;
+  width: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
