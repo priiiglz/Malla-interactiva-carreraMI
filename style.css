@@ -1,44 +1,72 @@
 body {
-  font-family: sans-serif;
-  background-color: #f0f2f5;
-  padding: 20px;
-  color: #222;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-h2 {
-  margin-top: 30px;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6ee;
   color: #333;
 }
 
-.cuatrimestre {
+header {
+  background-color: #dec8aa;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #3a2e1d;
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section.cuatri {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #4b3e2e;
+}
+
+.materias {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 10px;
-  margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
 }
 
 .materia {
-  background-color: white;
-  border: 2px solid #ccc;
+  background-color: #fffbe9;
+  border: 2px solid #d8c9aa;
+  padding: 15px;
   border-radius: 10px;
-  padding: 12px;
   text-align: center;
   cursor: pointer;
   transition: 0.2s;
+  font-weight: 500;
 }
 
 .materia:hover {
-  background-color: #e0f7ff;
+  background-color: #f3e6cc;
 }
 
 .materia.aprobada {
-  background-color: #d0ffd0;
+  background-color: #d6f5d6;
+  border-color: #86d686;
   text-decoration: line-through;
-  color: gray;
-  border-color: green;
+  color: #555;
 }
+
+/* Colores por cuatrimestre */
+.cuatri1 { background-color: #fff6e6; }
+.cuatri2 { background-color: #eef9f1; }
+.cuatri3 { background-color: #f4f0ff; }
+.cuatri4 { background-color: #fff0f0; }
+.cuatri5 { background-color: #f9f9f0; }
