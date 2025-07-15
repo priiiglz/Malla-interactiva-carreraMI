@@ -1,80 +1,86 @@
+:root {
+  --color-cuatri1: #f9e4b7;
+  --color-cuatri2: #d8f3dc;
+  --color-cuatri3: #ffe5ec;
+  --color-cuatri4: #dbe7f0;
+  --color-cuatri5: #fff3b0;
+}
+
 body {
+  font-family: Arial, sans-serif;
+  background: #fdfaf6;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdf6ee;
-  color: #333;
+  padding: 0;
 }
 
 header {
-  background-color: #dec8aa;
-  padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  background: #e0c9a6;
 }
 
-h1 {
+header h1 {
   margin: 0;
-  font-size: 28px;
-  color: #3a2e1d;
+  font-size: 1.8em;
 }
 
-main {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
+header p {
+  margin-top: 10px;
+  font-size: 1.2em;
 }
 
-section.cuatri {
-  margin-bottom: 40px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+section {
+  padding: 10px 20px;
 }
 
-section h2 {
-  margin-bottom: 15px;
-  color: #4b3e2e;
+h2 {
+  margin-top: 30px;
+  text-align: center;
 }
 
 .materias {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 12px;
+  margin-top: 10px;
 }
 
 .materia {
-  background-color: #fffbe9;
-  border: 2px solid #d8c9aa;
-  padding: 15px;
-  border-radius: 10px;
+  position: relative;
+  padding: 12px 8px;
   text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.2s;
   font-weight: 500;
+  background: #fff8ef;
+  overflow: hidden;
 }
 
-.materia:hover {
-  background-color: #f3e6cc;
+.cuatri1 .materia { background: var(--color-cuatri1); }
+.cuatri2 .materia { background: var(--color-cuatri2); }
+.cuatri3 .materia { background: var(--color-cuatri3); }
+.cuatri4 .materia { background: var(--color-cuatri4); }
+.cuatri5 .materia { background: var(--color-cuatri5); }
+
+.materia.aprobada::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 4px;
+  background-color: #8b0000;
+  top: 50%;
+  left: -50%;
+  transform: rotate(-45deg);
 }
 
-.materia.aprobada {
-  background-color: #d6f5d6;
-  border-color: #86d686;
-  text-decoration: line-through;
-  color: #555;
-}
-
-/* Colores por cuatrimestre */
-.cuatri1 { background-color: #fff6e6; }
-.cuatri2 { background-color: #eef9f1; }
-.cuatri3 { background-color: #f4f0ff; }
-.cuatri4 { background-color: #fff0f0; }
-.cuatri5 { background-color: #f9f9f0; }
-.nota {
-  margin-left: 10px;
-  padding: 4px;
+.materia input.nota {
+  display: block;
+  margin: 8px auto 0;
   width: 50px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
+  padding: 4px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  z-index: 1;
+  position: relative;
 }
