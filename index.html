@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mantenimiento Industrial - UNAHUR</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mantenimiento Industrial</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Mantenimiento Industrial</h1>
-    <p id="progreso">Progreso: 0%</p>
+    <p id="progreso">Progreso: 0% - 0 de 22 materias</p>
   </header>
-
   <main>
     <section class="cuatri cuatri1">
       <h2>📘 Primer cuatrimestre</h2>
       <div class="materias">
-        <div class="materia" onclick="toggle(this)">Matemática <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Gestión del mantenimiento <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Nuevos entornos y lenguajes <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Química <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Organización industrial <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
+        <div class="materia" onclick="toggle(this)">Matemática<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Gestión del mantenimiento<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Nuevos entornos y lenguajes<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Química<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Organización industrial<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
       </div>
     </section>
 
     <section class="cuatri cuatri2">
       <h2>📗 Segundo cuatrimestre</h2>
       <div class="materias">
-        <div class="materia" onclick="toggle(this)">Física <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Inglés I <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Electrotecnia <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Gestión de la calidad <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Seguridad, higiene y medio ambiente <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
+        <div class="materia" onclick="toggle(this)">Física<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Inglés I<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Electrotecnia<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Gestión de la calidad<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Seguridad, higiene y medio ambiente<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
       </div>
     </section>
 
     <section class="cuatri cuatri3">
       <h2>📙 Tercer cuatrimestre</h2>
       <div class="materias">
-        <div class="materia" onclick="toggle(this)">Sistemas de representación gráfica <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Materiales y elementos de máquinas <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Hidráulica <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Planificación del mantenimiento <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
+        <div class="materia" onclick="toggle(this)">Sistemas de representación gráfica<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Materiales y elementos de máquinas<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Hidráulica<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Planificación del mantenimiento<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
       </div>
     </section>
 
     <section class="cuatri cuatri4">
       <h2>📕 Cuarto cuatrimestre</h2>
       <div class="materias">
-        <div class="materia" onclick="toggle(this)">Instalaciones industriales <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Asignatura UNAHUR I <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Control de gestión <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Instalaciones eléctricas <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
+        <div class="materia" onclick="toggle(this)">Instalaciones industriales<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Asignatura UNAHUR I<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Control de gestión<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Instalaciones eléctricas<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
       </div>
     </section>
 
     <section class="cuatri cuatri5">
       <h2>📓 Quinto cuatrimestre</h2>
       <div class="materias">
-        <div class="materia" onclick="toggle(this)">Taller de mantenimiento industrial <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Técnicas predictivas <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Redes de datos y comunicaciones <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
-        <div class="materia" onclick="toggle(this)">Proyecto de integración <input type="text" class="nota" placeholder="Nota" oninput="guardarNotas()"/></div>
+        <div class="materia" onclick="toggle(this)">Taller de mantenimiento industrial<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Técnicas predictivas<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Redes de datos y comunicaciones<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
+        <div class="materia" onclick="toggle(this)">Proyecto de integración<input class="nota" placeholder="Nota" oninput="guardarNotas()"></div>
       </div>
     </section>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>
